@@ -1,0 +1,454 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  cursor: crosshair;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.907);
+  text-align: left;
+  margin-left: 380px;
+}
+
+span {
+  color: #02f6f2;
+}
+
+.app {
+  margin-top: 130px;
+  background-color: rgb(24, 24, 24);
+  width: 80%;
+  height: 30%;
+  border-radius: 15px;
+  padding: 30px 0px 60px;
+  box-shadow: 10px 10px 42px 0px #02f6f2;
+  margin-bottom: 22px;
+  font-size: xx-large;
+  display: inline-block;
+  transition: all 0.9s ease;
+}
+
+button {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(211, 206, 206);
+  border-radius: 15px;
+  padding: 12px;
+  margin: 15px 0px 0px;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+
+}
+
+button:hover {
+  transition-duration: 0.4s;
+  background-color: #3A3A3A;
+  color: aliceblue;
+}
+
+button::after {
+  content: "";
+  border-radius: 4em;
+  left: 6;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 60px white;
+}
+
+button:active:after {
+  box-shadow: 0 0 0 0 rgb(51, 51, 51);
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+button:active {
+  top: 1px;
+}
+
+select {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.907);
+  border-color: #02f6f2;
+  border-radius: 15px;
+  width: 25%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  cursor: pointer;
+  line-height: inherit;
+  text-align: center;
+}
+
+select:hover {
+  background-color: rgba(255, 255, 255, 0.907);
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width:280px) {
+  .app {
+    margin-top: 150px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+
+  select {
+    margin: 10px 0px 0px;
+    width: 75%;
+    font-size: medium;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 29px;
+  }
+
+  h1 span {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .submit-button {
+    padding: 7px;
+    width: 50%;
+    font-size: 20px;
+  }
+}
+
+@media (min-width:360px) {
+  .app {
+    margin-top: 170px;
+    width: 80%;
+    height: 30%;
+    border-radius: 15px;
+    font-size: 25px;
+  }
+
+  select {
+    margin: 10px;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h1 span {
+    font-size: 25px;
+  }
+}
+
+@media (min-width:375px) {
+  .app {
+    margin-top: 120px;
+    width: 80%;
+    height: 20%;
+    border-radius: 15px;
+    font-size: 25px;
+  }
+
+  select {
+    margin: 0px;
+    width: 58%;
+    font-size: medium;
+  }
+
+  .submit-button {
+    margin-bottom: -10px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h1 span {
+    font-size: 25px;
+  }
+}
+
+@media (min-width:390px) {
+  .app {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width:412px) {
+  .app {
+    margin-top: 220px;
+    width: 80%;
+    height: 30%;
+    border-radius: 15px;
+    font-size: 27px;
+    display: inline-block;
+    transition: all 0.9s ease;
+  }
+
+  select {
+    margin: 10px;
+    width: 58%;
+    font-size: large;
+  }
+
+  h1 span {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:414px) {
+  .app {
+    margin-top: 230px;
+    width: 80%;
+    height: 30%;
+    border-radius: 15px;
+    font-size: 27px;
+    display: inline-block;
+    transition: all 0.9s ease;
+  }
+
+  select {
+    margin: 10px;
+    width: 58%;
+    font-size: large;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h1 span {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:540px) {
+  .app {
+    margin-top: 110px;
+    border-radius: 15px;
+    font-size: 35px;
+  }
+
+  select {
+    margin: 10px;
+    width: 45%;
+    font-size: large;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  h1 span {
+    text-align: center;
+    font-size: 38px;
+  }
+}
+
+@media (min-width:768px) {
+  .app {
+    margin-top: 320px;
+    width: 80%;
+    height: 30%;
+    border-radius: 15px;
+    font-size: 25px;
+  }
+
+  select {
+    margin: 10px;
+    width: 27%;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  h1 span {
+    font-size: 38px;
+  }
+}
+
+@media (min-width:820px) {
+  .app {
+    margin-top: 110px;
+    font-size: 25px;
+  }
+
+  select {
+    margin: 10px;
+    width: 27%;
+    font-size: xx-large;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  h1 span {
+    font-size: 40px;
+  }
+}
+
+@media (min-width:912px) {
+  .app {
+    margin-top: 450px;
+    width: 90%;
+    height: 30%;
+    border-radius: 15px;
+    font-size: 30px;
+  }
+
+  select {
+    margin: 10px;
+    width: 40%;
+    font-size: xx-large;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 40px;
+  }
+
+  h1 span {
+    font-size: 50px;
+  }
+
+  button {
+    width: 50%;
+    font-size: 40px;
+  }
+
+  option {
+    font-size: small;
+  }
+}
+
+@media (min-width:1024px) {
+  .app {
+    margin-top: 60px;
+    font-size: 40px;
+  }
+
+  select {
+    margin: 10px;
+    width: 27%;
+    font-size: x-large;
+  }
+}
+
+
+@media (min-width:1280px) {
+  .app {
+    margin-top: 150px;
+    font-size: 40px;
+  }
+
+  select {
+    margin: 10px;
+    width: 22%;
+    font-size: x-large;
+  }
+
+  option {
+    font-size: medium;
+  }
+
+  h1 {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width:1300px) {
+  .app {
+    width: 80%;
+    font-size: xx-large;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 300px;
+  }
+
+  button {
+    width: 20%;
+    font-size: 30px;
+    padding: 12px;
+  }
+}
+
+
+/*Rotate size:IphoneSE*/
+@media (min-width:667px) {
+  .app {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  select {
+    width: 32%;
+    font-size: medium;
+  }
+
+  h1 {
+    margin-left: 40px;
+  }
+
+  h1 span {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:740px) {
+  h1 {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width:915px) {
+  h1 {
+    margin-left: 180px;
+  }
+
+  select {
+    width: 22%;
+  }
+}
+
+@media (min-width:1180px) {
+  .app {
+    margin-top: 220px;
+    font-size: 20px;
+  }
+
+  h1 span {
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin-left: 200px;
+  }
+
+  select {
+    width: 22%;
+    font-size: x-large;
+  }
+}

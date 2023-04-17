@@ -1,7 +1,6 @@
 [build]
 command = "npm run build && npm run export"
 publish = "out"
-
 [[redirects]]
 from = "/"
 to = "/index.js"
